@@ -1,0 +1,19 @@
+package com.ats.ecommerce.dto.user;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UpdateUserStatusRequestDto {
+
+    @NotNull
+    private Boolean enabled;
+
+    @NotNull
+    private Boolean locked;
+}
+
